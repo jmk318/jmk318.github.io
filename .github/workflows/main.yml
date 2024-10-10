@@ -1,1 +1,15 @@
----
+page:
+  lang: "en"
+  meta:
+    charset: "UTF-8"
+    title: "JinMan Kim"
+    author: "Jon Barron"
+    viewport: "width=device-width, initial-scale=1"
+  links:
+    favicon:
+      rel: "shortcut icon"
+      href: "images/favicon/favicon.ico"
+      type: "image/x-icon"
+    stylesheet:
+      rel: "stylesheet"
+      href: "stylesheet.css"
