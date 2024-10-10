@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <style>
       body {
         font-family: 'Roboto', sans-serif;
         background-color: #f4f4f9;
         margin: 0;
         padding: 0;
+        color: #333;
       }
 
       .container {
@@ -27,29 +28,34 @@
         border-radius: 10px;
       }
 
+      /* Banner Styling */
+      .banner {
+        width: 100%;
+        height: 300px; /* Adjust the height of the banner as needed */
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1, h2 {
+        color: #3f51b5;
+      }
+
       h1 {
         text-align: center;
         font-size: 2.5em;
-        color: #3f51b5;
         margin-bottom: 20px;
       }
 
       h2 {
         font-size: 1.8em;
-        color: #3f51b5;
         margin-bottom: 10px;
-      }
-
-      hr {
-        border: 0;
-        height: 2px;
-        background: #3f51b5;
-        margin: 40px 0;
       }
 
       p {
         font-size: 1.1em;
-        color: #666;
         line-height: 1.8em;
       }
 
@@ -63,53 +69,78 @@
         text-decoration: underline;
       }
 
-      .section {
-        margin-bottom: 40px;
-      }
-
-      .profile {
+      .profile-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
 
-      .profile img {
+      .profile-section img {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
       }
 
+      hr {
+        border: 0;
+        height: 2px;
+        background: #3f51b5;
+        margin: 40px 0;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
       .footer {
         text-align: right;
         font-size: small;
-        margin-top: 40px;
       }
     </style>
   </head>
 
   <body>
 
-    <!-- Main Content Container -->
-    <div class="container">
+    <!-- Banner Section -->
+    <div class="banner" style="background-image: url('images/banner_pic.jpeg');">
+      <!-- You can replace 'images/banner.jpg' with your desired image path -->
+    </div>
 
+    <div class="container">
       <!-- Profile Section -->
-      <div class="profile">
-        <div class="text-content">
+      <div class="profile-section">
+        <div>
+          <p class="name"><strong>JinMan Kim</strong></p>
           <h2>About Myself</h2>
-          <p>I'm currently a sophomore student at <a href="https://ai.yonsei.ac.kr/">Yonsei University</a> majoring in artificial intelligence.
-            During high school, I developed an interest in robotics and cybersecurity, aiming to create systems that can detect and warn about cyber-crimes.
-          </p>
-          <p>At Yonsei University, I am gaining valuable skills through both coursework and extracurricular activities that are helping me grow academically and personally.</p>
-          <p>
+          <p>I'm currently a sophomore student at <a href="https://ai.yonsei.ac.kr/">Yonsei University</a> majoring in artificial intelligence. I received my high school diploma in Tianjin, China, where I interacted with teachers who introduced me to robotics and sparked my interest in solving cyber-crime issues.</p>
+          <p>The <a href="https://ai.yonsei.ac.kr/sub3_1_a.php">curriculum</a> at Yonsei University is helping me gain essential knowledge in AI. My personal growth is also being fostered through extracurricular activities.</p>
+          <p style="text-align:center">
             <a href="mailto:jmk@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
             <a href="CV JinMan Kim_2023149053.pdf">CV</a> &nbsp;/&nbsp;
+            <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
             <a href="https://github.com/jmk318/">Github</a>
           </p>
         </div>
-        <div class="profile-image">
+        <div>
           <img src="images/profile_real.jpg" alt="Profile photo of JinMan Kim">
         </div>
+      </div>
+
+      <!-- Experiences Section -->
+      <div class="section">
+        <h2>Experiences</h2>
+        <p>The activities listed below represent areas of interest that have played an important role in cultivating my personal and academic growth. These experiences helped me engage with diverse social backgrounds and enhanced my overall development.</p>
+      </div>
+
+      <!-- Global Intelligence Section -->
+      <div class="section">
+        <h3>Global Intelligence</h3>
+        <p>Global Intelligence is a club that helps students develop leadership through domestic and overseas training programs. I participated in workshops and seminars organized by great speakers.</p>
+        <img src="images/global_intel.png" alt="Global Intelligence logo" style="display:block;margin: 0 auto;" width="200" height="100">
+        <p style="text-align:center;">The logo above is the symbol of the club "Global Intelligence"</p>
+        <p>As part of the 21st class of Global Intelligence, I met students from different colleges with diverse majors, which helped me broaden my perspective.</p>
+        <a href="https://drive.google.com/drive/folders/13NnP7W9zxvJIFzBYDD0eG3fUde79tneD" target="_blank">Images during Global Intelligence leadership program</a>
       </div>
 
       <!-- AWS Section -->
@@ -118,9 +149,8 @@
       <!-- AWS Hackathon Subsection -->
       <div class="section">
         <h2>AWS Hackathon</h2>
-        <p>The AWS Hackathon gave me the opportunity to collaborate with fellow developers on cloud-based projects. Our team leveraged AWS services such as EC2, S3, and Lambda to build scalable applications within tight deadlines.</p>
-        <p>We developed a real-time analytics platform capable of processing large volumes of data, enhancing my teamwork and cloud computing skills. 
-        <a href="https://aws.amazon.com/hackathon/" target="_blank">Learn more about AWS Hackathons</a>.</p>
+        <p>The AWS Hackathon gave me the opportunity to collaborate with fellow developers on cloud-based projects. Our team leveraged AWS services like EC2, S3, and Lambda to build scalable applications within tight deadlines.</p>
+        <p>We created a real-time analytics platform that could process large volumes of data, helping me improve my teamwork and cloud development skills. <a href="https://aws.amazon.com/hackathon/" target="_blank">Learn more about AWS Hackathons</a>.</p>
       </div>
 
       <!-- Divider Line -->
@@ -129,16 +159,14 @@
       <!-- AWS Project Subsection -->
       <div class="section">
         <h2>AWS Project</h2>
-        <p>As part of an independent project, I built a serverless web application using AWS technologies. The project involved integrating AWS DynamoDB, API Gateway, and Lambda to create a highly scalable, cost-effective solution.</p>
-        <p>This experience allowed me to dive deep into serverless architecture and gain valuable insights into cloud computing.
-        <a href="https://aws.amazon.com/projects/" target="_blank">Explore AWS Projects</a>.</p>
+        <p>As part of an independent project, I developed a serverless web application using AWS. This project involved integrating AWS DynamoDB, API Gateway, and Lambda to create a highly scalable, low-cost system.</p>
+        <p>This experience allowed me to dive deep into serverless architecture and hone my cloud computing skills. <a href="https://aws.amazon.com/projects/" target="_blank">Explore AWS Projects</a>.</p>
       </div>
 
       <!-- Footer Section -->
       <div class="footer">
         <p>Website template from Jon Barron.</p>
       </div>
-
     </div>
   </body>
 </html>
