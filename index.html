@@ -7,102 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+        color: #3f51b5;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        color: #3f51b5;
+        margin-bottom: 10px;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        background: #3f51b5;
+        margin: 40px 0;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: #666;
+        line-height: 1.8em;
+      }
+
+      a {
+        color: #3f51b5;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .footer {
+        text-align: right;
+        font-size: small;
+        margin-top: 40px;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Main Container -->
-    <table style="width:100%; max-width:800px; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
 
-            <!-- About Myself Section -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <!-- Left Column: Text Content -->
-                  <td style="padding:2.5%; width:63%; vertical-align:middle">
-                    <p class="name" style="text-align: center;">
-                      <strong>JinMan Kim</strong>
-                    </p>
-                    <h2 style="text-align:left;">About Myself</h2>
-                    <p>I'm currently a sophomore student at <a href="https://ai.yonsei.ac.kr/">Yonsei University</a>, majoring in artificial intelligence. 
-                      I received my high school diploma in Tianjin, China, where I had the opportunity to interact with enthusiastic teachers who introduced me to robotics.
-                      During high school, I became interested in addressing cyber-crime, which sparked my desire to create a system that can detect and warn about potential cyber-crime risks.
-                    </p> 
-                    <p>The <a href="https://ai.yonsei.ac.kr/sub3_1_a.php">curriculum</a> at Yonsei University offers comprehensive courses, equipping me with essential skills in artificial intelligence. 
-                      The extracurricular activities also contribute to both my personal and academic growth.
-                    </p>
-                    <p style="text-align:center">
-                      <a href="mailto:jmk@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
-                      <a href="CV JinMan Kim_2023149053.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/jmk318/">Github</a>
-                    </p>
-                  </td>
+    <!-- Main Content Container -->
+    <div class="container">
 
-                  <!-- Right Column: Profile Image -->
-                  <td style="padding:2.5%; width:40%; max-width:40%">
-                    <a href="images/profile_real.jpg">
-                      <img style="width:100%; max-width:100%; object-fit: cover; border-radius: 50%;" 
-                           alt="Profile photo" src="images/profile_real.jpg" class="hoverZoomLink">
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- Profile Section -->
+      <div class="profile">
+        <div class="text-content">
+          <h2>About Myself</h2>
+          <p>I'm currently a sophomore student at <a href="https://ai.yonsei.ac.kr/">Yonsei University</a> majoring in artificial intelligence.
+            During high school, I developed an interest in robotics and cybersecurity, aiming to create systems that can detect and warn about cyber-crimes.
+          </p>
+          <p>At Yonsei University, I am gaining valuable skills through both coursework and extracurricular activities that are helping me grow academically and personally.</p>
+          <p>
+            <a href="mailto:jmk@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
+            <a href="CV JinMan Kim_2023149053.pdf">CV</a> &nbsp;/&nbsp;
+            <a href="https://github.com/jmk318/">Github</a>
+          </p>
+        </div>
+        <div class="profile-image">
+          <img src="images/profile_real.jpg" alt="Profile photo of JinMan Kim">
+        </div>
+      </div>
 
-            <!-- Experiences Section -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px; width:100%; vertical-align:middle">
-                    <h2>Experiences</h2>
-                    <p>The activities listed below represent areas of interest that have significantly contributed to my personal and academic growth. 
-                       These experiences allowed me to interact with people from diverse backgrounds, enriching my overall development.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- AWS Section -->
+      <h1>AWS</h1>
 
-            <!-- Global Intelligence Section -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:20px; width:100%; vertical-align:middle">
-                    <h3>Global Intelligence</h3>
-                    <p>Global Intelligence is a club that develops leadership skills through domestic and overseas training programs. 
-                       I had the chance to participate in workshops and seminars organized by esteemed speakers.
-                    </p>
-                    <img src="images/global_intel.png" alt="Global Intelligence Logo" width="200" height="100" style="display:block;margin: 0 auto;">
-                    <p style="text-align:center;">The logo above is the symbol of the club "Global Intelligence"</p>
-                    <p>As part of the 21st cohort of Global Intelligence, I had the opportunity to meet students from different colleges with various majors. 
-                       This experience broadened my perspective.
-                    </p>  
-                    <a href="https://drive.google.com/drive/folders/13NnP7W9zxvJIFzBYDD0eG3fUde79tneD" target="_blank">Images during Global Intelligence leadership program</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- AWS Hackathon Subsection -->
+      <div class="section">
+        <h2>AWS Hackathon</h2>
+        <p>The AWS Hackathon gave me the opportunity to collaborate with fellow developers on cloud-based projects. Our team leveraged AWS services such as EC2, S3, and Lambda to build scalable applications within tight deadlines.</p>
+        <p>We developed a real-time analytics platform capable of processing large volumes of data, enhancing my teamwork and cloud computing skills. 
+        <a href="https://aws.amazon.com/hackathon/" target="_blank">Learn more about AWS Hackathons</a>.</p>
+      </div>
 
-            <!-- Footer Section -->
-            <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:right; font-size:small;">
-                      Website template from Jon Barron.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- Divider Line -->
+      <hr>
 
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- AWS Project Subsection -->
+      <div class="section">
+        <h2>AWS Project</h2>
+        <p>As part of an independent project, I built a serverless web application using AWS technologies. The project involved integrating AWS DynamoDB, API Gateway, and Lambda to create a highly scalable, cost-effective solution.</p>
+        <p>This experience allowed me to dive deep into serverless architecture and gain valuable insights into cloud computing.
+        <a href="https://aws.amazon.com/projects/" target="_blank">Explore AWS Projects</a>.</p>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer">
+        <p>Website template from Jon Barron.</p>
+      </div>
+
+    </div>
   </body>
 </html>
