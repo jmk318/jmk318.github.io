@@ -1,9 +1,13 @@
+on:
+  push:
+    branches:
+      - main
 page:
   lang: "en"
   meta:
     charset: "UTF-8"
     title: "JinMan Kim"
-    author: "Jon Barron"
+    author: "JinMan Kim"
     viewport: "width=device-width, initial-scale=1"
   links:
     favicon:
